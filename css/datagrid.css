@@ -1,0 +1,11 @@
+#datagrid {
+
+}
+
+#datagrid table{
+    height:220px;
+}
+
+#datagrid tbody {
+    overflow-y: scroll;
+}
