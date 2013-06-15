@@ -11,7 +11,8 @@ app = {
             "http://*/*",
             "https://*/*"
         ]
-    }
+    },
+    searchFilter: null
 };
 
 require(['app/listener'], function (listener) {

@@ -1,11 +1,13 @@
 #datagrid {
-
+    width: 100%;
+    height: 220px;
+    overflow: scroll;
 }
 
-#datagrid table{
-    height:220px;
+#datagrid tr {
+    cursor: pointer;
 }
 
-#datagrid tbody {
-    overflow-y: scroll;
+#datagrid td {
+    white-space: nowrap;
 }

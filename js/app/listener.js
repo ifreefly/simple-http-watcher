@@ -5,7 +5,7 @@
  * Time: 下午10:34
  * To change this template use File | Settings | File Templates.
  */
-define([], function () {
+define(['app/datagrid'], function (datagrid) {
     return {
         onSendHeaders: function (details) {
             var requestLog = {
@@ -16,8 +16,8 @@ define([], function () {
                     type: details.type
                 }
             };
+            datagrid.writeOnSendHeaders(requestLog);
             window.sessionStorage.setItem(requestLog.id, JSON.stringify(requestLog));
-            console.log(JSON.parse(window.sessionStorage.getItem(requestLog.id)));
         }
     };
 });
