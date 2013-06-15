@@ -5,10 +5,19 @@
  * Time: 下午10:34
  * To change this template use File | Settings | File Templates.
  */
-define([],function(){
+define([], function () {
     return {
-        onSendHeaders:function(details){
-            console.log(details);
+        onSendHeaders: function (details) {
+            var requestLog = {
+                id: details.requestId,
+                briefProperty: {
+                    url: details.url,
+                    method: details.method,
+                    type: details.type
+                }
+            };
+            window.sessionStorage.setItem(requestLog.id, JSON.stringify(requestLog));
+            console.log(JSON.parse(window.sessionStorage.getItem(requestLog.id)));
         }
     };
 });
