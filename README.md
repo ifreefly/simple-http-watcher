@@ -6,8 +6,7 @@ like httpfox,but it's for chrome.
 
 TODO:
 
-* 302 request share the same requestId,I can log every header sending now,but then I should update it,
-but I can't use requestId now,I think I should block redirect request and make another.
+* 302 request share the same requestId,I can log every header sending now,but I need update them then.Need find a solution.
 * catch all infos when redirect/complete/error,and update all the infos with them.
 * clear log.
 * stop log.
